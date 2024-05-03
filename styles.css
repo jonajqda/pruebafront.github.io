@@ -1,0 +1,603 @@
+/* Estilos para el encabezado */
+
+body {
+    background-image: url('img/pexels-francesco-ungaro-281260.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#headersolo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #05d6cc; /
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    z-index: 9999; 
+}
+
+
+.opciones {
+    position: fixed;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 300px; 
+    margin: 0 auto; /
+    z-index: 9999; 
+}
+
+/* Estilos para cada palabra */
+.opciones div {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+
+#miSeccion {
+    background-image: url('./img/roma4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+
+
+.freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#miniclass {
+    height: 310px;
+}
+
+#preguntacapital{
+
+    font-size: 24px;
+    text-align: center;
+    margin-left: -90px;
+}
+#fecha {
+    font-size: 24px; 
+    margin-left: 50px;
+}
+
+#imagen-destino {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta-postal {
+    width: 300px; 
+    height: auto;
+    position: relative;
+    margin-right: -100px; /
+}
+
+.tarjeta-postal img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+
+.tarjeta-postal:nth-child(1) {
+    z-index: 3;
+    transform: translateX(0); 
+}
+
+.tarjeta-postal:nth-child(2) {
+    z-index: 2;
+    transform: translateX(-50px) scale(0.9); 
+}
+
+.tarjeta-postal:nth-child(3) {
+    z-index: 1;
+    transform: translateX(-100px) scale(0.8); 
+}
+
+.tarjeta-postal:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+
+#answers {
+    margin-left: -30px;
+    display: flex;
+    list-style-type: none; 
+}
+
+#answers li {
+    margin-right: 20px; 
+}
+
+
+#encabezado2 {
+    color: #007bff;
+    animation: moverEncabezado 1s ease forwards;
+    background-image: url('img/roma4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #05d6cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999; 
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#close-popup {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#answers li {
+    cursor: pointer;
+}
+
+#answers li:hover, #answers li.selected {
+    color: red;
+}
+
+section {
+    padding: 20px;
+}
+.fa-map-marker-alt {
+    color: #007bff; 
+    font-size: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+   
+}
+
+#tegusta{
+
+    margin-left: 80px;
+}
+
+#submit {
+    margin-top: 0px;
+    margin-left: 280px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+   
+    #answers {
+        margin-left: -100px;
+        display: flex;
+        list-style-type: none; 
+    }
+    
+    #answers li {
+        margin-right: 20px; 
+        font-size: 2.2em; 
+    }
+    
+
+    #correctamente {
+        align-items: center; 
+        text-align: center; 
+    }
+    
+    .opciones {
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    .opciones div {
+        margin-left: 20px; 
+        cursor: pointer; 
+        transition: color 0.3s; 
+        font-size: 24px; 
+        padding: 10px; 
+    }
+    
+    .opciones div:hover {
+        color: #007bff; 
+    }
+    
+    
+    section {
+        background-color: #f2f2f2;
+    }
+    
+    
+    #quiz-form input[type="text"],
+    #quiz-form input[type="email"] {
+        width: calc(40% - 10px); 
+        margin-bottom: 40px; 
+    }
+
+   
+    #preguntas {
+        font-family: "Freeman", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 100px;
+      
+        font-size: 50px;
+       
+    }
+    
+  
+    #preguntas {
+        
+        margin-left: -10px;
+        font-size: 50px;
+    }
+
+
+    #questionario {
+        margin-left: 120px;
+    }
+  
+  
+    #submit {
+        margin-top: 0px;
+        margin-left: 180px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #submit:hover {
+        background-color: #0056b3;
+    }
+    
+ 
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    form label {
+        width: calc(33.33% - 10px); 
+        text-align: right; 
+        padding-right: 10px; 
+    }
+
+ 
+    form input[type="text"],
+    form input[type="email"] {
+        width: calc(66.66% - 10px); 
+    }
+
+
+
+    .footer{
+
+        margin-top: -120px;
+    }
+   
+    .redes-sociales {
+        margin-left: 150px;
+        margin-top: 5px; 
+        display: flex; 
+    }
+
+   
+    .redes-sociales a {
+        margin-left: -60px; 
+        color: #333; 
+        font-size: 24px; 
+    }
+    
+   
+    .fab.fa-instagram {
+        color: #bc2a8d; 
+        font-size: 24px; 
+        margin-top: -5px; 
+    }
+
+    footer .redes-sociales a:hover {
+        color: #007bff; 
+    }
+    
+
+    footer .redes-sociales a:nth-child(4) {
+        color: #ff0000; 
+    }
+    
+    footer .redes-sociales a:nth-child(5) {
+        color: #bd081c; 
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #answers {
+        margin-left: -140px;
+        display: flex;
+        list-style-type: none; 
+    }
+    
+    #answers li {
+        margin-right: 20px; 
+        font-size: 3.2em; 
+    }
+    
+
+    #preguntas {
+        
+        margin-left: 100px;
+        font-size: 50px;
+    }
+    #fecha {
+
+        margin-left: 280px;
+    }
+    .opciones {
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    .opciones div {
+        margin-left: 20px; 
+        cursor: pointer; 
+        transition: color 0.3s; 
+        font-size: 38px; 
+        padding: 10px; /
+    }
+    
+    .opciones div:hover {
+        color: #007bff; 
+    }
+    
+   
+    #tegusta{
+
+        margin-top: 90px;
+        margin-left: 210px;
+    }
+
+    #preguntas{
+
+
+        margin-left: 270px;
+    }
+    
+
+
+    #questionario{
+
+        margin-top: 40px;
+        margin-left: 280px;
+        margin-bottom: 40px;
+    }
+    #quiz-form input[type="text"],
+    #quiz-form input[type="email"] {
+       
+        width: calc(0%  + 120px); 
+        margin: 0 5%; 
+        margin-bottom: 20px; 
+        margin-left: 10px;
+        
+    }
+
+    #submit {
+        margin-top: 40px;
+        margin-left: 290px;
+        width: calc(15% - 10px); 
+        height: 30px; 
+        margin-bottom: 20px; 
+        float: left; 
+    }
+
+  
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.redes-sociales {
+
+    margin-left: 150px;
+    margin-top: 130px;
+}
+footer .redes-sociales a {
+    margin-right: 100px; 
+    color: #333; 
+    font-size: 24px; 
+}
+
+footer .redes-sociales a:hover {
+    color: #007bff; 
+}
+
+
+footer .redes-sociales a:nth-child(4) {
+    color: #ff0000; 
+}
+
+footer .redes-sociales a:nth-child(5) {
+    color: #bd081c; 
+}
+
+/* Estilos para PCs */
+@media (min-width: 992px) {
+    /* Estilos para la versión de PC */
+    #submit {
+        margin-top: 40px;
+        margin-left: 550px; /* Ajusta este valor según tu preferencia */
+        width: calc(15% - 10px); 
+        height: 50px; 
+        margin-bottom: 20px; 
+        float: left; 
+    }
+    
+  
+    #answers {
+        margin-left: -100px;
+        display: flex;
+        list-style-type: none; 
+    }
+    
+    #answers li {
+        margin-right: 20px; 
+        font-size: 3.2em; 
+    }
+    
+    #preguntas {
+        
+        margin-left: 100px;
+        font-size: 50px;
+    }
+
+    #correctamente{
+
+        margin-left: 500px;
+    }
+    
+    .opciones {
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    .opciones div {
+        margin-left: 20px; 
+        cursor: pointer; 
+        transition: color 0.3s; 
+        font-size: 28px; 
+
+        padding: 10px; 
+    }
+    
+    .opciones div:hover {
+        color: #007bff; 
+    }
+    
+    #preguntacapital{
+
+        font-size: 24px;
+        text-align: center;
+        margin-left: -640px;
+    }
+   
+    #fecha {
+        font-size: 24px; 
+        margin-left: 550px;
+    }
+    
+    #preguntas {
+        margin-left: 510px;
+    }
+   
+    #quiz-form input[type="text"],
+    #quiz-form input[type="email"] {
+        width: calc(15% - 5px); 
+        margin-top: 20px;
+        margin-right: 10px; 
+        margin-bottom: 20px; 
+    }
+
+    #questionario {
+        margin-left: 550px;
+    }
+
+    #quiz-form  {
+        margin-left: 320px;
+    }
+
+    #nombre{
+        margin-left: 10px;
+    }
+   
+    #submit {
+        margin-top: 20px; 
+        margin-left: 10px; 
+    }
+
+    #apellido {
+        margin-left: 10px;
+    }
+
+    .footer{
+
+        margin-left: 300px;
+    }
+
+    #tegusta{
+        margin-top: 90px;
+        margin-left: 580px;
+    }
+}
