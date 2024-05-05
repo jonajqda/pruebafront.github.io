@@ -1,11 +1,22 @@
-/* Estilos para el encabezado */
+.aircraft {
+    width: 150px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.aircraft:hover {
+    transform: scale(2.1); 
+}
+
 
 body {
-    background-image: url('img/pexels-francesco-ungaro-281260.jpg');
+  
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 #headersolo {
     position: fixed;
@@ -496,6 +507,8 @@ footer .redes-sociales a:nth-child(5) {
 /* Estilos para PCs */
 @media (min-width: 992px) {
     /* Estilos para la versión de PC */
+
+  
     #submit {
         margin-top: 40px;
         margin-left: 550px; /* Ajusta este valor según tu preferencia */
