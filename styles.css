@@ -233,7 +233,7 @@ section {
         font-size: 14px;
     }
 
-   
+
     #answers {
         margin-left: -100px;
         display: flex;
@@ -257,7 +257,7 @@ section {
     }
     
     .opciones div {
-        margin-left: 20px; 
+        margin-left: px; 
         cursor: pointer; 
         transition: color 0.3s; 
         font-size: 24px; 
